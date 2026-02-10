@@ -45,11 +45,13 @@ html,
 body {
   height: 100%;
   overflow: hidden;
+  overflow-x: hidden;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   background: var(--bg-primary);
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 }
 
 ::selection {
@@ -100,6 +102,7 @@ button {
 .app-layout {
   display: flex;
   height: 100vh;
+  height: 100dvh;
   width: 100vw;
   overflow: hidden;
 }
@@ -110,7 +113,9 @@ button {
   flex-direction: column;
   min-width: 0;
   height: 100vh;
+  height: 100dvh;
   position: relative;
+  overflow: hidden;
 }
 
 @keyframes fadeIn {
@@ -173,6 +178,10 @@ button {
 
 @media (max-width: 768px) {
   :root {
-    --sidebar-width: 100vw;
+    --sidebar-width: 85vw;
+  }
+
+  .app-layout {
+    height: 100dvh;
   }
 }

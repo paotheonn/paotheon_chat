@@ -53,6 +53,7 @@
     position: relative;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    overflow-x: hidden;
 }
 
 .bubbleUser {
@@ -121,6 +122,9 @@
     margin: 10px 0;
     width: 100%;
     font-size: 13px;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .content th,
@@ -163,6 +167,7 @@
     overflow: hidden;
     border: 1px solid var(--border-subtle);
     background: var(--bg-code);
+    max-width: 100%;
 }
 
 .codeHeader {
@@ -288,11 +293,12 @@
 
 @media (max-width: 768px) {
     .messageRow {
-        padding: 4px 12px;
+        padding: 4px 10px;
     }
 
     .bubble {
-        max-width: 85%;
+        max-width: 88%;
+        padding: 8px 12px;
     }
 
     .content {
@@ -300,12 +306,22 @@
     }
 
     .codeContent pre {
-        font-size: 12px !important;
+        font-size: 11px !important;
+        padding: 10px !important;
+    }
+
+    .codeBlock {
+        border-radius: var(--radius-sm);
     }
 
     .avatar {
-        width: 28px;
-        height: 28px;
-        font-size: 13px;
+        width: 26px;
+        height: 26px;
+        font-size: 12px;
+    }
+
+    .imagePreview {
+        max-width: 180px;
+        max-height: 140px;
     }
 }

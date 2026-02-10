@@ -89,8 +89,22 @@
 }
 
 @media (max-width: 768px) {
+    .header {
+        padding: calc(env(safe-area-inset-top, 8px) + 8px) 12px 8px;
+        min-height: 48px;
+    }
+
     .menuButton {
         display: flex;
+    }
+
+    .logoIcon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .logoText {
+        font-size: 16px;
     }
 
     .model {

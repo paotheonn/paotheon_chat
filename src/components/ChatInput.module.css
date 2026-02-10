@@ -159,10 +159,29 @@
 
 @media (max-width: 768px) {
     .wrapper {
-        padding: 8px 12px 12px;
+        padding: 8px 10px calc(env(safe-area-inset-bottom, 8px) + 8px);
     }
 
     .textarea {
         font-size: 16px;
+    }
+
+    .inputContainer {
+        padding: 3px 3px 3px 12px;
+    }
+
+    .sendBtn {
+        width: 36px;
+        height: 36px;
+    }
+
+    .uploadBtn {
+        width: 34px;
+        height: 34px;
+    }
+
+    .hint {
+        font-size: 10px;
+        margin-top: 4px;
     }
 }

@@ -72,12 +72,34 @@
 }
 
 @media (max-width: 768px) {
+    .empty {
+        padding: 24px 16px;
+        gap: 12px;
+    }
+
     .emptyLogo {
-        width: 64px;
-        height: 64px;
+        width: 56px;
+        height: 56px;
     }
 
     .emptyTitle {
-        font-size: 22px;
+        font-size: 20px;
+    }
+
+    .emptySubtitle {
+        font-size: 13px;
+    }
+
+    .suggestions {
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 100%;
+        padding: 0 8px;
+    }
+
+    .suggestion {
+        font-size: 12px;
+        padding: 10px 14px;
+        text-align: left;
     }
 }
